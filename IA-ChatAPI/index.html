@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/IA-ChatAPI/style.css">
+    <title>Chat GPT - API Test</title>
+</head>
+<body class="light-mode">
+    <header class="header-container">
+        <h1 class="header-title">Chat GPT</h1>
+    </header>
+    <main class="main-container">
+        <button id="toggleModeBtn" onclick="toggleMode()">
+            Alterar Modo
+        </button>
+        <div class="input-display">
+            <input 
+                type="text"
+                id="userInput"
+                placeholder="Digite algo..."
+            />
+            <button 
+                class="button-send"
+                onclick="sendMessage()"
+            >
+                <strong>Enviar</strong>
+            </button>
+        </div>
+        <div class="output-response">
+            <div id="apiOutput"></div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; 2023 - by 
+            <a id="l" href="https://www.linkedin.com/in/luca-bobbio-0135b2240/" target="blank"><b>Luca Bobbio</b></a> | 
+            <a id="l" href="https://github.com/LucaBobbioDev" target="blank">GitHub</a>
+        </p>
+    </footer>
+    <script src="/IA-ChatAPI/script.js"></script>
+</body>
+</html>

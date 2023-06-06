@@ -1,0 +1,161 @@
+/*Importando Font do Google*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+/*Reset*/
+* {
+    font-family: 'Raleway', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    color: #333;
+
+    line-height: 1.5;
+}
+
+.header-container {
+    background-color: #59ad69;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.header-title {
+    color: #fff;
+}
+  
+.main-container {
+    max-width: 600px;
+
+    margin: auto;
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color:#b8b8b8;
+    
+    border: none;
+    border-radius: 4px;
+    
+}
+
+#toggleModeBtn {
+    padding: 10px 20px;
+
+    background-color: #408e4d;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#toggleModeBtn:hover {
+    background-color: #306f3e;
+}
+
+.input-display {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+  
+#userInput {
+    flex-grow: 1;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+  
+.button-send {
+    margin-left: 10px;
+    padding: 10px 20px;
+
+    background-color: #333;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.button-send:hover {
+    background-color: #555;
+}
+  
+.output-response {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+  
+#apiOutput {
+    margin-bottom: 10px;
+}
+
+/*Dark Mode e Light Mode*/
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+    background-color: #f2f2f2;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .main-container {
+    background-color: #e4e4e4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode .main-container {
+    background-color: #4e4e4e;
+    color: #f2f2f2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    position: absolute;
+
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    
+    background-color: #59ad69;
+    color: #fff;
+
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+  
